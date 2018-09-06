@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Corey's Portfolio | About Me</title>
+  <meta name="description" content="A simple grid layout with an initial fullscreen intro" />
+  <meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,400,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/layout-simple.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+<div id="container" class="container image-container">
+    <section class="hero is-info is-fullheight header-image">
+        <!-- <img class="intro__image" src="img/coastWhiteHouses.jpg" alt="Iceland galcier"/> -->
+        <div class="hero-head">
+          <nav class="navbar">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item">
+                  <a href="/home" class="brand-logo navbar-item">COREY
+                      <span id="logo2">SLADE</span>
+                  </a>
+                </a>
+                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                    <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                        <span aria-hidden="true" id="firstBurger"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </span>
+                </a>
+              </div>
+              <div id="navbarMenuHeroA navMenu" class="navbar-menu has-text-white">
+                <div class="navbar-end">
+                    <a href="/index" class="navbar-item is-active">
+                      HOME
+                  </a>
+                  <a href="/about" class="navbar-item">
+                      ABOUT
+                  </a>
+                  <a href="/portfolio" class="navbar-item">
+                      PORTFOLIO
+                  </a>
+                  <a href="/contact" class="navbar-item">
+                      CONTACT
+                  </a>
+                  <!-- <span class="navbar-item resume-download"> -->
+                    <a class="resumeLink navbar-item" href="/assets/document/CoreySladeResume4-2018-a.pdf" download><span
+                        class="downloadIcon resumeDownload">
+                        <i class="fas fa-download"></i>  </span>
+                    Download My Resume
+                    </a>
+                  <!-- </span> -->
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      
+        <div class="hero-body has-text-centered">
+          <!-- <div class="container">
+            <p class="title">
+                Full Stack Web Developer
+            </p>
+            <p class="subtitle">
+                Let's Build Something Together
+            </p>
+          </div> -->
+          <div class="container-fluid">
+          <header class="columns">
+            <h1 class="column is-12 aboutMeHeader">About Me</h1>
+          </header>
+          <div class="box">
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64">
+                    <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                      <br>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                    </p>
+                  </div>
+                  <!-- <nav class="level is-mobile">
+                    <div class="level-left">
+                      <a class="level-item" aria-label="reply">
+                        <span class="icon is-small">
+                          <i class="fas fa-reply" aria-hidden="true"></i>
+                        </span>
+                      </a>
+                      <a class="level-item" aria-label="retweet">
+                        <span class="icon is-small">
+                          <i class="fas fa-retweet" aria-hidden="true"></i>
+                        </span>
+                      </a>
+                      <a class="level-item" aria-label="like">
+                        <span class="icon is-small">
+                          <i class="fas fa-heart" aria-hidden="true"></i>
+                        </span>
+                      </a>
+                    </div>
+                  </nav> -->
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      
+        <div class="hero-foot">
+          <button class="trigger">
+              <svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
+                <g class="icon icon--grid">
+                  <rect x="32.5" y="5.5" width="22" height="22"/>
+                  <rect x="4.5" y="5.5" width="22" height="22"/>
+                  <rect x="32.5" y="33.5" width="22" height="22"/>
+                  <rect x="4.5" y="33.5" width="22" height="22"/>
+                </g>
+                <g class="icon icon--cross">
+                  <line x1="4.5" y1="55.5" x2="54.953" y2="5.046"/>
+                  <line x1="54.953" y1="55.5" x2="4.5" y2="5.047"/>
+                </g>
+              </svg>
+              <span>View content</span>
+            </button>
+        </div>
+      </section>
+      <section class="items-wrap">
+          <a href="#" class="item">
+            <img class="item__image" src="img/item01.jpg" alt="item01"/>
+            <h2 class="item__title">Magnificence</h2>
+          </a>
+          <a href="#" class="item">
+            <img class="item__image" src="img/item02.jpg" alt="item02"/>
+            <h2 class="item__title">Electrifying</h2>
+          </a>
+          <a href="#" class="item">
+            <img class="item__image" src="img/item03.jpg" alt="item03"/>
+            <h2 class="item__title">Dynamic</h2>
+          </a>
+          <a href="#" class="item">
+            <img class="item__image" src="img/item04.jpg" alt="item04"/>
+            <h2 class="item__title">Crucial</h2>
+          </a>
+          <a href="#" class="item">
+            <img class="item__image" src="img/item05.jpg" alt="item05"/>
+            <h2 class="item__title">Awe-inspiring</h2>
+          </a>
+          <a href="#" class="item">
+            <img class="item__image" src="img/item06.jpg" alt="item06"/>
+            <h2 class="item__title">Serene</h2>
+          </a>
+          <a href="#" class="item">
+            <img class="item__image" src="img/item07.jpg" alt="item07"/>
+            <h2 class="item__title">Vulnerable</h2>
+          </a>
+          <a href="#" class="item">
+            <img class="item__image" src="img/item08.jpg" alt="item08"/>
+            <h2 class="item__title">Bountiful</h2>
+          </a>
+          <a href="#" class="item">
+            <img class="item__image" src="img/item09.jpg" alt="item09"/>
+            <h2 class="item__title">Endangered</h2>
+          </a>
+          <a href="#" class="item">
+            <img class="item__image" src="img/item10.jpg" alt="item10"/>
+            <h2 class="item__title">Beautiful</h2>
+          </a>
+          <a href="#" class="item">
+            <img class="item__image" src="img/item11.jpg" alt="item11"/>
+            <h2 class="item__title">Inspiring</h2>
+          </a>
+          <a href="#" class="item">
+            <img class="item__image" src="img/item12.jpg" alt="item12"/>
+            <h2 class="item__title">Refreshing</h2>
+          </a>
+        </section>
+    </div>
+
+
+  <script src="js/classie.js"></script>
+  <script>
+    (function () {
+      var container = document.getElementById('container'),
+        trigger = container.querySelector('button.trigger');
+
+      function toggleContent() {
+        if (classie.has(container, 'container--open')) {
+          classie.remove(container, 'container--open');
+          classie.remove(trigger, 'trigger--active');
+          window.addEventListener('scroll', noscroll);
+        } else {
+          classie.add(container, 'container--open');
+          classie.add(trigger, 'trigger--active');
+          window.removeEventListener('scroll', noscroll);
+        }
+      }
+
+      function noscroll() {
+        window.scrollTo(0, 0);
+      }
+
+      // reset scrolling position
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+      // disable scrolling
+      window.addEventListener('scroll', noscroll);
+
+      trigger.addEventListener('click', toggleContent);
+
+      // For Demo purposes only (prevent jump on click)
+      [].slice.call(document.querySelectorAll('.items-wrap a')).forEach(function (el) {
+        el.onclick = function () {
+          return false;
+        }
+      });
+    })();
+  </script>
+</body>
+
+</html>
