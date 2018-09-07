@@ -147,6 +147,9 @@ a:focus {
 	text-align: right;
 	margin-right: 20px;
 	margin-bottom: 20px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 .navbar-brand{
@@ -231,7 +234,16 @@ a:focus {
 }
 
 .aboutMeHeader {
-	font-size: 22px;
+	font-size: 50px;
+	color: #1ab3de;
+	font-weight: 900;
+}
+
+
+
+.media-content {
+	color: #e09e43;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 @media screen and (min-width: 1472px) {
