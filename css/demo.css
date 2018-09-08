@@ -150,6 +150,19 @@ a:focus {
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	width: 100%;
+}
+
+.footCol {
+	height: 70px;
+}
+
+.fillerImg {
+	width: 355px;
+}
+
+.items-wrap {
+	overflow: auto;
 }
 
 .navbar-brand{
@@ -237,9 +250,44 @@ a:focus {
 	font-size: 50px;
 	color: #1ab3de;
 	font-weight: 900;
+	font-family: "Playfair Display", Georgia, serif;
 }
 
+.contentP {
+	font-family: "Playfair Display", Georgia, serif;
+}
 
+.level-item {
+	color: #1ab3de;
+}
+
+.deviconTitle {
+	position: relative;
+	left: -15%;
+	/* right: 164%;
+	position: -webkit-sticky;
+	position: sticky; 
+	top: 10px; */
+	font-size: 34px;
+	font-family: "Playfair Display", Georgia, serif;
+}
+
+a.item.fillerLink {
+	height: 70px !important;
+}
+
+.hidden {
+	display: none;
+}
+
+.svgGrid {
+	width: 62px;
+	text-align: center;
+}
+
+.grid-rect {
+	stroke-width: 4px;
+}
 
 .media-content {
 	color: #e09e43;

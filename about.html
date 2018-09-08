@@ -19,7 +19,11 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 </head>
-
+<!-- <button class="content__close">
+    <svg class="icon icon--longarrow">
+      <use xlink:href="#icon-longarrow"></use>
+    </svg>
+  </button> -->
 <body>
 
   <div id="container" class="container image-container">
@@ -58,28 +62,17 @@
                   <a href="/contact" class="navbar-item">
                     CONTACT
                   </a>
-                  <!-- <span class="navbar-item resume-download"> -->
                   <a class="resumeLink navbar-item" href="/assets/document/CoreySladeResume4-2018-a.pdf" download><span
                       class="downloadIcon resumeDownload">
                       <i class="fas fa-download"></i> </span>
                     Download My Resume
                   </a>
-                  <!-- </span> -->
                 </div>
               </div>
             </div>
           </nav>
         </div>
-        <!-- <div class="intro__content"> -->
         <div class="hero-body has-text-centered">
-          <!-- <div class="container">
-            <p class="title">
-                Full Stack Web Developer
-            </p>
-            <p class="subtitle">
-                Let's Build Something Together
-            </p>
-          </div> -->
           <div class="container-fluid">
             <header class="columns">
               <h1 class="column is-12 aboutMeHeader">About Me</h1>
@@ -93,7 +86,7 @@
                 </div>
                 <div class="media-content">
                   <div class="content">
-                    <p>
+                    <p class="contentP">
                       <strong>Corey Slade</strong>
                       <br>
                       I am a Full Stack Developer from San Diego with experience doing both front-end and back-end
@@ -107,7 +100,7 @@
                   </div>
                   <nav class="level is-mobile">
                     <div class="level-item">
-                      Click the button below to see the languages, design and development tools I know how to use.
+                      Click the <span class="svgGrid"></span> button below to see the languages, design and development tools I know how to use.
                     </div>
                   </nav>
                 </div>
@@ -117,6 +110,11 @@
         </div>
 
         <div class="hero-foot">
+          <div class="container-fluid columns footCol">
+          <div class="column is-11">
+            <!-- <h2 id="deviconTitle" class="deviconTitle hidden">Technologies & Tools</h2> -->
+          </div>
+          <div class="column">
           <button class="trigger">
             <svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
               <g class="icon icon--grid">
@@ -133,9 +131,24 @@
             <span>View content</span>
           </button>
         </div>
+        </div>
+        </div>
         <!-- </div> -->
     </section>
     <section class="items-wrap">
+      <a href="#" class="item fillerLink">
+          <img class="item__image fillerImg" src="" />
+          <h2 class="item__title"></h2>
+      </a>
+      <a href="#" class="item fillerLink">
+          <img class="item__image fillerImg" src="" />
+          <h2 class="item__title"></h2>
+      </a>
+      <h2 id="deviconTitle" class="deviconTitle hidden">Technologies & Tools</h2>
+      <a href="#" class="item fillerLink">
+          <img class="item__image fillerImg" src="" />
+          <h2 class="item__title"></h2>
+      </a>
       <a href="#" class="item">
         <img class="item__image" src="img/svg/mern.svg" alt="MERN Stack" />
         <h2 class="item__title">MERN Stack</h2>
@@ -267,22 +280,26 @@
     </section>
   </div>
 
-
+  <script src="https://code.jquery.com/jquery.js"></script>
   <script src="js/classie.js"></script>
+  <script src="js/about.js"></script>
   <script>
     (function () {
       var container = document.getElementById('container'),
         trigger = container.querySelector('button.trigger');
+      var iconTitle = document.getElementById('deviconTitle');
 
       function toggleContent() {
         if (classie.has(container, 'container--open')) {
           classie.remove(container, 'container--open');
           classie.remove(trigger, 'trigger--active');
           window.addEventListener('scroll', noscroll);
+          classie.add(iconTitle, 'hidden');
         } else {
           classie.add(container, 'container--open');
           classie.add(trigger, 'trigger--active');
           window.removeEventListener('scroll', noscroll);
+          classie.remove(iconTitle, 'hidden');
         }
       }
 
